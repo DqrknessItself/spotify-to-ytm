@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.spotify.com/*", "*://music.youtube.com/*"],
-      "js": ["test.js"]
+      "js": ["redirect.js"]
     }
   ]
 }
