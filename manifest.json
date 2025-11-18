@@ -2,18 +2,21 @@
   "manifest_version": 2,
   "name": "Redirect: Spotify -> YouTube Music",
   "version": "1.0",
-
-  "description": "Redirects web links from Spotify to YouTube music",
-
+  "description": "Immediately redirects web links from Spotify to YouTube Music",
   "icons": {
-    "48": "icons/border-48.png",
+    "48": "icons/border-96.png",
     "96": "icons/border-96.png"
   },
-
   "content_scripts": [
     {
       "matches": ["*://*.spotify.com/*", "*://music.youtube.com/*"],
       "js": ["redirect.js"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "darknessitself22@gmail.com",
+      "data_collection_permissions": []
+    }
+  }
 }
